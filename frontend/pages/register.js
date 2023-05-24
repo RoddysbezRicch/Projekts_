@@ -1,23 +1,29 @@
-import { login } from "@/utils/api";
-import { useState } from "react";
+import { useState } from "react"
 
 
-const LoginPage = () => {
+const RegisterPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("");
 
-  const handleLogin = async (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
     
-    const response = await login(email, password);
+    const response =  await register(username, email, password);
     
     console.log(response);
   };
 
   return (
     <div>
-      <h2>Ielogoties</h2>
-      <form onSubmit={handleLogin}>
+      <h2>Reģistreties</h2>
+      <form onSubmit={handleRegister}>
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
         <input
           type="email"
           placeholder="Email"
@@ -30,10 +36,10 @@ const LoginPage = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Ielogoties</button>
+        <button type="submit">Reģistreties</button>
       </form>
     </div>
   );
 };
 
-export default LoginPage;
+export default RegisterPage;

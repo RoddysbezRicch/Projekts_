@@ -93,7 +93,7 @@ const Cart = () => {
                                     onClick={handlePayment}
                                 >
                                     Pāriet uz maksāšanu
-                                    {/* {loading && <img src="/spinner.svg" />} */}
+                                     {loading && <img src="/spinner.svg" />} 
                                 </button>
                                
                             </div>
