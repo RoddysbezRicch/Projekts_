@@ -1,6 +1,5 @@
+import React, { useState } from "react";
 import { login } from "@/utils/api";
-import { useState } from "react";
-
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -8,30 +7,33 @@ const LoginPage = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    
+
     const response = await login(email, password);
-    
+
     console.log(response);
   };
 
   return (
-    <div>
-      <h2>Ielogoties</h2>
-      <form onSubmit={handleLogin}>
+    <div className="login-container">
+      <h2 className="login-title">Ielogoties</h2>
+      <form className="login-form" onSubmit={handleLogin}>
         <input
-          type="email"
-          placeholder="Email"
+          className="login-input"
+          type="Epasts"
+          placeholder="Epasts"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
-          type="password"
-          placeholder="Password"
+          className="login-input"
+          type="Parole"
+          placeholder="Parole"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Ielogoties</button>
+        <button className="login-button" type="submit">Ielogoties</button>
       </form>
+      <div className="login-footer"></div>
     </div>
   );
 };

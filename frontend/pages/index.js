@@ -21,7 +21,7 @@ export default function Home({products}) {
               Šis ir veikals 
               </div>
             <div className='text-md md:text-xl'>
-              marko D12 ara
+              Apģērba un kurpju veikals
               </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-14

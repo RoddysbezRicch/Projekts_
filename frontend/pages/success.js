@@ -8,15 +8,15 @@ const Success = () => {
             <Wrapper>
                 <div className="max-w-[600px] rounded-lg p-5 border border-black mx-auto flex flex-col">
                     <div className="text-2xl font-bold">
-                        Palddies ka iepercies pie mums
+                       Paldies ka iepirkies pie mums!
                     </div>
                     <div className="text-lg font-bold mt-2">
-                        Pasutijums ir veiksmīgs
+                        Apmaksa ir veiksmīga
                     </div>
                     <div className="text-base mt-5">
-                        For any product related query, drop an email to
+                        Par jautājumiem rakstiet uz ēpastu
                     </div>
-                    <div className="underline">shoeshopcontact@shop.com</div>
+                    <div className="underline">veikals123@gmail.com</div>
 
                     <Link href="/" className="font-bold mt-5">
                         Turpini iepirkties

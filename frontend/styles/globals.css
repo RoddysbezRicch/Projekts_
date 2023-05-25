@@ -108,3 +108,90 @@
 .markdown ul li {
     margin: 10px 0;
 }
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .register-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .register-input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .register-button {
+    width: 150px;
+    height: 40px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .register-button:hover {
+    background-color: #221f1f;
+  }
+  .register-footer {
+    height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+  }
+  
+  .login-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .login-button {
+    width: 150px;
+    height: 40px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #2e3032;
+  }
+  .login-footer {
+    height: 40px;
+    margin-bottom: 50px;
+  }
+  

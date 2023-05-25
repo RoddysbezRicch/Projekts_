@@ -15,14 +15,9 @@ const Footer = () => {
                             Atrast veikalu
                         </div>
                         <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            reģistrējies
+                            Atsauksmes
                         </div>
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            sūti mums atsauksmes
-                        </div>
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            Atlaides
-                        </div>
+                        
                     </div>
                    
 
@@ -34,20 +29,18 @@ const Footer = () => {
                                 Palīdzība
                             </div>
                             <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Pasūtijuma status
+                                Sūtijuma status
                             </div>
                             <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
                                 Sūtijums
                             </div>
                             <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                SSūtijuma atgriešana
+                                Sūtijuma atgriešana
                             </div>
                             <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
                                 Apmaksas veidi
                             </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Kontakti
-                            </div>
+                            
                         </div>
                         
 
@@ -56,12 +49,7 @@ const Footer = () => {
                             <div className="font-oswald font-medium uppercase text-sm">
                                 Par mums
                             </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Jaunumi
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Investori
-                            </div>
+                            
                             
                         </div>
                        
@@ -105,16 +93,10 @@ const Footer = () => {
                
                 <div className="flex gap-2 md:gap-5 text-center md:text-left flex-wrap justify-center">
                     <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
-                        Guides
+                    Pārdošanas noteikumi
                     </div>
                     <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
-                        Terms of Sale
-                    </div>
-                    <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
-                        Terms of Use
-                    </div>
-                    <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
-                        Privacy Policy
+                        Privātuma polise
                     </div>
                 </div>
                

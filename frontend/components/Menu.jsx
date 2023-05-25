@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BsChevronDown } from "react-icons/bs";
 
 const data = [
-    { id: 1, name: "Home", url: "/" },
+    
     { id: 2, name: "PAR MUMS", url: "/about" },
     { id: 3, name: "KATEGORIJAS", subMenu: true },
     { id: 4, name: "KONTAKTI", url: "/contact" },
@@ -12,10 +12,10 @@ const data = [
 ];
 
 const subMenuData = [
-    { id: 1, name: "1", doc_count: 11 },
-    { id: 2, name: "1", doc_count: 8 },
-    { id: 3, name: "1", doc_count: 64 },
-    { id: 4, name: "1", doc_count: 107 },
+    { id: 1, name: "", doc_count: 11 },
+    { id: 2, name: "", doc_count: 8 },
+    { id: 3, name: "", doc_count: 64 },
+    { id: 4, name: "", doc_count: 107 },
 ];
 
 const Menu = ({ showCatMenu, setShowCatMenu, categories }) => {

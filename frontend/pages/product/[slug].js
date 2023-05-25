@@ -44,19 +44,19 @@ const ProductDetails = ({ product, products }) => {
             <div className="text-lg font-semibold mb-5">{p.subtitle}</div>
             <div className="flex items-center">
                             <p className="mr-2 text-lg font-semibold">
-                                MRP : &#8377;{p.price}
+                                EURO : &euro;{p.price}
                             </p>
                             {p.original_price && (
                                 <>
                                     <p className="text-base  font-medium line-through">
-                                        &#8377;{p.original_price}
+                                        &euro;{p.original_price}
                                     </p>
                                     <p className="ml-auto text-base font-medium text-green-500">
                                         {getDiscountedPricePercentage(
                                             p.original_price,
                                             p.price
                                         )}
-                                        % off
+                                        % atlaide
                                     </p>
                                 </>
                             )}
@@ -69,9 +69,9 @@ const ProductDetails = ({ product, products }) => {
             </div>
             <div className="mb-10">
               <div className="flex justify-between mb-2">
-                <div className="text-mb font-semibold">Izvelies izmeru</div>
+                <div className="text-mb font-semibold">Izvelies izmēru</div>
                 <div className="text-mb font-medium text-black/[0.5] cursor-pointer">
-                  Izmera guide
+                  Izmēra ceļvedis
                 </div>
               </div>
               <div id="sizesGrid" className="grid grid-cols-3 gap-2">

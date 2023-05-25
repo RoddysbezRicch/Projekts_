@@ -57,7 +57,7 @@ const Cart = () => {
                            
                             <div className="flex-[2]">
                                 <div className="text-lg font-bold">
-                                    groza proukti
+                                    Produkti
                                 </div>
                                 {cartItems.map((item) => (
                                     <CartItem key={item.id} data={item} />
@@ -72,18 +72,14 @@ const Cart = () => {
                                 <div className="p-5 my-5 bg-black/[0.05] rounded-xl">
                                     <div className="flex justify-between">
                                         <div className="uppercase text-md md:text-lg font-medium text-black">
-                                            Subtotal
+                                            Summa
                                         </div>
                                         <div className="text-md md:text-lg font-medium text-black">
                                             &euro;{subTotal}
                                         </div>
                                     </div>
                                     <div className="text-sm md:text-md py-5 border-t mt-5">
-                                        The subtotal reflects the total price of
-                                        your order, including duties and taxes,
-                                        before any applicable discounts. It does
-                                        not include delivery costs and
-                                        international transaction fees.
+                                        Summā iekļauts PVN.
                                     </div>
                                 </div>
 

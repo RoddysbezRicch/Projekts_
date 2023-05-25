@@ -1,5 +1,4 @@
-import { useState } from "react"
-
+import React, { useState } from "react";
 
 const RegisterPage = () => {
   const [email, setEmail] = useState("");
@@ -8,36 +7,40 @@ const RegisterPage = () => {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    
-    const response =  await register(username, email, password);
-    
+
+    const response = await register(username, email, password);
+
     console.log(response);
   };
 
   return (
-    <div>
-      <h2>Reģistreties</h2>
-      <form onSubmit={handleRegister}>
+    <div className="register-container">
+      <h2 className="register-title">Reģistreties</h2>
+      <form className="register-form" onSubmit={handleRegister}>
         <input
+          className="register-input"
           type="text"
-          placeholder="Username"
+          placeholder="Lietotajvards"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
-          type="email"
-          placeholder="Email"
+          className="register-input"
+          type="Epasts"
+          placeholder="Epasts"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
-          type="password"
-          placeholder="Password"
+          className="register-input"
+          type="Parole"
+          placeholder="Parole"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Reģistreties</button>
+        <button className="register-button" type="submit">Reģistreties</button>
       </form>
+      <div className="register-footer"></div>
     </div>
   );
 };

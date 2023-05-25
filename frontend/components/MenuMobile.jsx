@@ -4,20 +4,20 @@ import { BsChevronDown } from "react-icons/bs";
 
 
 const data = [
-  { id: 1, name: "Home", url: "/" },
-  { id: 2, name: "Par Mums", url: "/about" },
-  { id: 3, name: "Kateogrijas", subMenu: true },
-  { id: 4, name: "Kontakti", url: "/contact" },
-  { id: 5, name: "Ielogoties", url: "/login" },
-  { id: 6, name: "Reģistrējies", url: "/Register" },
+  
+  { id: 2, name: "PAR MUMS", url: "/about" },
+  { id: 3, name: "KATEGORIJAS", subMenu: true },
+  { id: 4, name: "KONTAKTI", url: "/contact" },
+  { id: 5, name: "IELOGOTIES", url: "/login" },
+  { id: 6, name: "REĢISTRĒTIES", url: "/register" },
 
 ];
 
 const subMenuData = [
-  { id: 1, name: "Sveces 1", doc_count: 11 },
-  { id: 2, name: "Sveces 2", doc_count: 8 },
-  { id: 3, name: "Sveces 3", doc_count: 64 },
-  { id: 4, name: "Sveces 4", doc_count: 107 },
+  { id: 1, name: "", doc_count: 11 },
+  { id: 2, name: "", doc_count: 8 },
+  { id: 3, name: "", doc_count: 64 },
+  { id: 4, name: "", doc_count: 107 },
 ];
 
 const MenuMobile = ({setShowCatMenu, showCatMenu, setMobileMenu, categories}) => {
