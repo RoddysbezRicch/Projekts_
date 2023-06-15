@@ -7,8 +7,8 @@ const data = [
     { id: 2, name: "PAR MUMS", url: "/about" },
     { id: 3, name: "KATEGORIJAS", subMenu: true },
     { id: 4, name: "KONTAKTI", url: "/contact" },
-    { id: 5, name: "IELOGOTIES", url: "/login" },
-    { id: 6, name: "REĢISTRĒTIES", url: "/register" },
+   // { id: 5, name: "IELOGOTIES", url: "/login" },
+   // { id: 6, name: "REĢISTRĒTIES", url: "/register" },
 ];
 
 const subMenuData = [
@@ -26,7 +26,7 @@ const Menu = ({ showCatMenu, setShowCatMenu, categories }) => {
                     <React.Fragment key={item.id}>
                         {!!item?.subMenu ? (
                             <li
-                                className="cursor-pointer flex items-center gap-2 relative"
+                            className="cursor-pointer flex items-center justify-center gap-2 relative text-center"
                                 onMouseEnter={() => setShowCatMenu(true)}
                                 onMouseLeave={() => setShowCatMenu(false)}
                             >

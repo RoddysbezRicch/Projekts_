@@ -24,7 +24,6 @@
     letter-spacing: 1px;
 }
 
-/* PRODUCT DETAILS CAROUSEL STYLING CUSTOMIZATION START */
 .productCarousel.carousel-root {
     display: flex;
     flex-direction: row-reverse;
@@ -97,7 +96,7 @@
         margin: 0;
     }
 }
-/* PRODUCT DETAILS CAROUSEL STYLING CUSTOMIZATION END */
+
 
 .markdown ul {
     margin: 0;
@@ -194,4 +193,31 @@
     height: 40px;
     margin-bottom: 50px;
   }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 85px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+
   

@@ -5,6 +5,7 @@ import Head from 'next/head';
 import store from '@/store/store';
 import { Provider } from 'react-redux';
 
+
 export default function App({ Component, pageProps }) {
   return (
   <>
@@ -25,7 +26,9 @@ export default function App({ Component, pageProps }) {
    
     <Provider store={store}>
        <Header/>
-       <Component {...pageProps} />
+       
+                <Component {...pageProps} />
+            
   <Footer/>
     </Provider>
   

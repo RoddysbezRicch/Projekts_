@@ -8,8 +8,8 @@ const data = [
   { id: 2, name: "PAR MUMS", url: "/about" },
   { id: 3, name: "KATEGORIJAS", subMenu: true },
   { id: 4, name: "KONTAKTI", url: "/contact" },
-  { id: 5, name: "IELOGOTIES", url: "/login" },
-  { id: 6, name: "REĢISTRĒTIES", url: "/register" },
+  //{ id: 5, name: "IELOGOTIES", url: "/login" },
+  //{ id: 6, name: "REĢISTRĒTIES", url: "/register" },
 
 ];
 
@@ -47,8 +47,8 @@ const MenuMobile = ({setShowCatMenu, showCatMenu, setMobileMenu, categories}) =>
                         setMobileMenu(false)
                         }}>
                           <li className="py-4 px-8 border-t flex justify-between">
-                            {c.Nosaukums}
-                            <span className="opacity-50 text-sm">{`(${c.product.data.length})`}</span>
+                            {c.name}
+                            <span className="opacity-50 text-sm">{`(${c.products.data.length})`}</span>
                           </li>
                         </Link>
                       );
@@ -58,7 +58,7 @@ const MenuMobile = ({setShowCatMenu, showCatMenu, setMobileMenu, categories}) =>
               </li>
             ) : (
               <li className="py-4 px-5 border-b">
-                <Link href={item.url} onClick={()=> setMobileMenu(false)}>{item.name}</Link>
+                <Link href={item?.url} onClick={()=> setMobileMenu(false)}>{item.name}</Link>
               </li>
             )}
           </React.Fragment>
